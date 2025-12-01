@@ -14,12 +14,8 @@ const Post = ({items, handleDelete}) => {
         )
     }
   return (
-    <>  
-        <div className=''>
-            <Link to="/"><button type='button' className="backbtn">Back</button></Link> 
-        </div>
-        <form className='delForm' onSubmit={(e)=>e.preventDefault()}>
-                   
+    <>          
+        <form className='delForm' onSubmit={(e)=>e.preventDefault()}>                   
             <div className="post-detail">
             <h2 className="post-detail-title">{iPost.title}</h2>
             <p className="post-detail-date">{iPost.date}</p>
@@ -27,8 +23,10 @@ const Post = ({items, handleDelete}) => {
                 <p>{iPost.content}</p>
             </div>
             </div>
-            
-            <button type='button' className="delbtn" onClick={()=>handleDelete(id)}>Delete Post</button>
+            <div className=''>
+                <Link to="/"><button type='button' className="backbtn me-5">Back</button></Link>
+                <button type='button' className="delbtn" onClick={()=>handleDelete(id)}>Delete Post</button> 
+            </div>
         </form>  
     </> 
   )
