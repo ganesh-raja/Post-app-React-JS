@@ -60,7 +60,7 @@ function App() {
   const handleDelete = (id) => {
     const delPost = items.filter(item => (item.id).toString() !== id)
     setItems(delPost)
-    localStorage.setItem("post_items", JSON.stringify(items))
+    localStorage.setItem("post_items", JSON.stringify(delPost))
     setSearchPost("")  
     navigate("/")   
   } 
