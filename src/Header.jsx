@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import { Link } from 'react-router-dom'
 
-const Header = ({searchPost, setSearchPost, searchResult, emptySearch}) => {
+const Header = ({searchPost, setSearchPost, searchResult, emptySearch, searchFocus}) => {
   return (
     <header className="Header p-2">
       <nav className='navbar navbar-expand-lg'>
@@ -17,6 +17,7 @@ const Header = ({searchPost, setSearchPost, searchResult, emptySearch}) => {
           </Link>        
           <SearchBar searchPost={searchPost} setSearchPost={setSearchPost} searchResult={searchResult}
             emptySearch ={emptySearch}
+            searchFocus={searchFocus}
           />          
           <Navbar />
         </div>  

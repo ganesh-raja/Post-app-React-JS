@@ -97,6 +97,15 @@
   font-weight: 600;
 }
 
+.search-item-link {
+  text-decoration: none;
+  color: black;
+}
+
+.list-group-item:hover {  
+  background: #92d5ff;  
+}
+
 /* ===== Mobile Menu Button ===== */
 .menu-toggle {
   display: none;

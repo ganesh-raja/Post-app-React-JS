@@ -66,8 +66,12 @@ function App() {
   } 
 
   const emptySearch = () => {
-    setSearchResult("")
-    setSearchPost("")
+    document.getElementById("search-item").style.display = "none"
+  }
+
+  const searchFocus = () => {
+    document.getElementById("search-item").style.display = "block"
+    setSearchResult(searchResult)
   }
 
   return (
@@ -76,7 +80,8 @@ function App() {
       searchPost={searchPost} 
       setSearchPost={setSearchPost}
       searchResult={searchResult} 
-      emptySearch={emptySearch}          
+      emptySearch={emptySearch}
+      searchFocus={searchFocus}          
     />     
     <Routes>
       <Route path="/" element={<Home items={pageItems} />}/>
