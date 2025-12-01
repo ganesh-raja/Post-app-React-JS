@@ -56,13 +56,14 @@
 
 
 /* ===== Navbar Links ===== */
-.nav-bar {
+.nav-item {
   display: flex;
   gap: 25px;
   align-items: center;
+  margin-left: 20px;
 }
 
-.nav-bar a {
+.nav-item a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
@@ -72,7 +73,7 @@
 }
 
 /* Awesome underline hover effect */
-.nav-bar a::after {
+.nav-item a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -83,16 +84,16 @@
   transition: width 0.3s ease;
 }
 
-.nav-bar a:hover {
+.nav-item a:hover {
   color: #1da1f2;
 }
 
-.nav-bar a:hover::after {
+.nav-item a:hover::after {
   width: 100%;
 }
 
-.nav-bar a.active {
-  color: #1da1f2;
+.nav-item a.active {
+  color: #1da1f2 !important;
   font-weight: 600;
 }
 
