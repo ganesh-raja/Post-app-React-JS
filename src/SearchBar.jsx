@@ -5,7 +5,8 @@ const SearchBar = ({searchPost, setSearchPost, searchResult, emptySearch}) => {
   return (
     <div>
       <form action="" onSubmit={(e)=>e.preventDefault()}>
-        <input type="text" placeholder='Search Post...' value={searchPost}         
+        <input type="text" placeholder='Search Post...' value={searchPost} 
+        className='form-control'        
         onChange={(e)=>setSearchPost(e.target.value)} onBlur={emptySearch}/>
       </form>
       {searchResult !== "" &&
