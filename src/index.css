@@ -106,6 +106,17 @@
   background: #92d5ff;  
 }
 
+.list-group{
+  max-height: 210px; /* adjust based on item height */
+  overflow-y: auto;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 2px #38bdf8 !important;
+}
+
 /* ===== Mobile Menu Button ===== */
 .menu-toggle {
   display: none;
