@@ -13,10 +13,12 @@ const Home = ({items}) => {
         )
     }
   return (
-    <div className='feed-container'>
-    {items.map(item => 
-        <Feeds key={item.id} item={item} />
-    )}
+    <div className='container'>
+      <div className="row my-2 d-flex justify-content-center">
+         {items.map(item => 
+              <Feeds key={item.id} item={item} />
+          )}
+      </div>   
     </div>
   )
 }

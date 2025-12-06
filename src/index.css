@@ -464,54 +464,53 @@ textarea {
 }
 
 /* Home page */
-.feed-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* centers the cards horizontally */
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  padding: 40px 0;
-}
 
-.post-card {
-  width: 90%;
+
+.card {
+  width: 100%;
+  height: 170px !important;
   max-width: 400px;         /* limits width for larger screens */
-  background: #1e293b;
-  border-radius: 12px;
-  padding: 20px;
+  background: #1e293b !important;
+  border-radius: 12px;  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 auto;           /* ensures it's centered inside parent */
+  margin: 10px auto;           /* ensures it's centered inside parent */
 }
 
-.post-card a {
+.card a {
   text-decoration: none;
 }
 
-.post-card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-.post-title {
+.card-title {
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #38bdf8;
+  font-weight: 600;  
+  color: #38bdf8 !important;
 }
 
-.post-date {
+.card-date {
   font-size: 13px;
   color: #94a3b8;
   margin-bottom: 10px;
 }
 
-.post-content {
+.card-content {
   font-size: 15px;
   line-height: 1.5;
   color: #e2e8f0;
 }
+
+.card::-webkit-scrollbar { width: 8px; border-radius: 4px;}
+.card::-webkit-scrollbar-track { background: #0f172a; }
+.card::-webkit-scrollbar-thumb { background: #4d5867; }
+
+.list-group::-webkit-scrollbar { width: 8px; border-radius: 4px;}
+.list-group::-webkit-scrollbar-track { background: #ffffff; }
+.list-group::-webkit-scrollbar-thumb { background: #4d5867; }
 
 /* Post page */
 .delForm {
